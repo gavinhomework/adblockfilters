@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250112085644
-! Last modified: 2025/01/12 08:56:44
-! Blocked Filters: 41871
+! Version: 20250112161336
+! Last modified: 2025/01/12 16:13:36
+! Blocked Filters: 41863
 !
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -22681,7 +22681,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 17ce.com##a[href="/site/api"]
 17ce.com##a[href^="http"]:not([href*="17ce.com"]) img
 17ce.com##section[id*="top_banner"]
-17house.com##.suiping
 17jita.com###wp > .wp > .pbm
 17k.com##.baiduBox
 17ok.com##.t-bann
@@ -23462,7 +23461,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 9game.cn###btInfo
 9game.cn##.guide-app-fix
 9hentai.*#%#//scriptlet("prevent-addEventListener", "click", "flashElement")
-9ht.com##a[href*=".360.cn/"]
 9ht.com,cesafe.com,downcc.com,downyi.com,paopaoche.net,pc0359.cn,pc6.com###gaosuxiazai
 9ht.com,pc0359.cn,pc6.com##.downnow
 9jaflaver.com,alaskapublic.org,allkeyshop.com,analyticsinsight.net,ancient-origins.net,animeidhentai.com,arabtimesonline.com,asura.gg,biblestudytools.com,bitcoinworld.co.in,christianity.com,cnx-software.com,coingolive.com,csstats.gg,digitallydownloaded.net,digitbin.com,domaingang.com,downturk.net,fresherslive.com,gizmochina.com,glitched.online,glodls.to,guidedhacking.com,hackernoon.com,hubcloud.day,indishare.org,kaas.am,katfile.com,khmertimeskh.com,litecoin-faucet.com,mbauniverse.com,mediaite.com,mgnetu.com,myreadingmanga.info,newsfirst.lk,nexter.org,owaahh.com,parkablogs.com,pastemytxt.com,premiumtimesng.com,railcolornews.com,resultuniraj.co.in,retail.org.nz,ripplesnigeria.com,rtvonline.com,ryuugames.com,sashares.co.za,sofascore.com,thinknews.com.ng,timesuganda.com,totemtattoo.com,trancentral.tv,vumafm.co.za,yugatech.com,zmescience.com##[href*="bit.ly/"]
@@ -24652,7 +24650,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||geekbang.org/resource/image/ad/14/addb521e20de1a302206f4286eac3914.png
 @@||genshuixue.com/??/*/counter/action_
 @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js
-@@||gg.wudizuqiu.com/72nba.js
 @@||ghxi.com^$stealth=dpi
 @@||gias.jd.com/js/td.js
 @@||gifshow.com/rest/wd/common/log/collect/acfun
@@ -26686,7 +26683,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||valf.atm.youku.com/vf?site=1&rst=mp4&
 @@||vfsglobal.*/*/Track/*^$stealth=donottrack|useragent|ip
 @@||video*.xhcdn.com/key=$stealth
-@@||video.weibocdn.com^$stealth
 @@||vidsrc.*/embed/$stealth=referrer
 @@||vip.sp-flv.com^*/?url=age_$subdocument,stealth=referrer
 @@||vipstatic.com/img/share/blank.png
@@ -32639,7 +32635,6 @@ kdslife.com###youhui
 kdslife.com##a[href*="kds.2144.cn"]
 kdslife.com,pchome.net##.weixin
 ke.qq.com##.bottom-bar
-kehuan.net.cn##.bread_728x90
 kekenet.com###bottomlink
 kekenet.com###weixinwz
 kekenet.com###weixinwz1
@@ -37272,6 +37267,7 @@ xinhuanet.com##.xhdf_moreAdv
 xinmin.cn##span[style^="position:fixed;right"]
 xinmin.cn##span[style^="position:fixed;right"] + a
 xitek.com##a[href*="/adclick"]
+xitonghe.com##.sidebar-wx
 xitongtiandi.net##.sidebar > a[target="_blank"] > img
 xitongzhijia.net###top_gg
 xitongzhijia.net##.btn-dl_swift
@@ -37843,9 +37839,6 @@ zzzyk.com###Tinfo
 ||178.com/glr.js
 ||17ce.com^*_$image
 ||17dm.com/s/common/js/*AD.js
-||17house.com/zt/style/*_banner*.js
-||17house.com/zt/style/*_bottom_module.js
-||17house.com/zt/style/pc/js/zt_
 ||17k.com/jump/uh
 ||17ok.com/focus/3j_right_jdt.shtml
 ||17yy.com/style/ifra_ad/
@@ -38016,7 +38009,6 @@ zzzyk.com###Tinfo
 ||51ztzj.com/res/web/img/download_sign
 ||51ztzj.com/res/web/img/pic/inshow.jpg
 ||51zxw.net/netclass/images/*_top.jpg
-||520z-2.com/uploadfile/sucai/
 ||521000.com/co/
 ||5251.net^$third-party
 ||52che.com/Inc/FooterComm_
@@ -38123,8 +38115,6 @@ zzzyk.com###Tinfo
 ||99lb.net/index_files/*/970
 ||99mst.com/upfiles/adv/main02.jpg
 ||99tianji.com/hack/
-||9duw.com/js/sj
-||9duw.com/pic/
 ||9game.cn/stat/
 ||9ihome.com/info/ADTopvnet/
 ||9ist.com/others/ad/
@@ -39626,7 +39616,6 @@ zzzyk.com###Tinfo
 ||hao5.net/images/*0-
 ||haofs.com/haofs/ggapi.asp
 ||haoqu99.com/d/haoqu/haoqu
-||haosf.com/kan.htm
 ||hbbtv.*.de^
 ||hcbbsoss.oss-cn-hangzhou.aliyuncs.com^*-banner
 ||hd21.*/templates/base_master/js/jquery.shows.min.js
@@ -41176,6 +41165,8 @@ zzzyk.com###Tinfo
 ||ssp.qq.com/ad^$xhr
 ||sspai.com/api/v1/recommend*=article_
 ||sspai.com/attachment/sponsor/
+||ssports.iqiyi.com/app/$media,object-subrequest
+||ssports.iqiyi.com/json/shop/shopInfo
 ||st-*.dynamicyield.com^
 ||sta.extreme-down.
 ||sta.wawacity.
@@ -41667,6 +41658,7 @@ zzzyk.com###Tinfo
 ||xitek.com/idzone
 ||xitong8.com/theme/default/images/725x90.gif
 ||xitong8.com/theme/default/images/index_13.jpg
+||xitonghe.com/SkinNew/js/init_g.
 ||xitongzhijia.net/theme/2020/js/10033_
 ||xiu8.com/baidu-tieba/*&forum_name=
 ||xizi.com/js/rotator.js
