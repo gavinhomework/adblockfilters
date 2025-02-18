@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250218085115
-! Last modified: 2025/02/18 08:51:15
-! Blocked Filters: 41976
+! Version: 20250218161515
+! Last modified: 2025/02/18 16:15:15
+! Blocked Filters: 41983
 !
 ###AC_ad
 ###AD_160
@@ -28344,6 +28344,9 @@ boce.com##div[class^="money"]
 bodysize.org,porngo.com,heavy-r.com,y2mate.com,niceporn.xxx,0gomovies.com,igg-games.com#$?#iframe[srcdoc*="XMLHttpRequest"] { remove: true; }
 bodysize.org,porngo.com,heavy-r.com,y2mate.com,niceporn.xxx,0gomovies.com,igg-games.com$$iframe[srcdoc="XMLHttpRequest"]
 bog.ac##.sidebar-url
+bohe.cn##.ml-30
+bohe.cn##.mt20
+bohe.cn##IFRAME[width='400'][height='200']
 boke112.com###linkdh
 boke112.com###sidebar img
 boke112.com##.custom-html-widget > div[style="margin-bottom: -7px;"]
@@ -28926,7 +28929,7 @@ cn-healthcare.com##.fh_ad_wrap
 cn-healthcare.com##.fh_advent_wrap
 cn.bing.com##.b_bza_pole
 cn.bing.com#?##b_results > li:-abp-has(.b_adProvider)
-cn.bing.com#?#.b_algo:-abp-has(p:-abp-properties(content:*hgAbj3WJSu83ynLkuUc6pXNStPcP2lmm6yyOWqGmKXKfgGsPJ4MmXjD6wAAAABJRU5ErkJggg))
+cn.bing.com#?#.b_algo:-abp-has(p:-abp-properties(content:*Jr8IbslwuuoZ9kr8cTrXXkY8lfZL5p8v2TTht91DQxXZU9AB6BpwzkAAU2AAAAAElFTkSuQmCC))
 cna.com.tw,ettoday.net##.ad_970
 cnbeta.com.tw,qudong.com##a[href*=".ctyun."]
 cnbeta.com.tw,thinkphp.cn##.cooperation
@@ -34920,6 +34923,7 @@ quark.cn##.ad-wolong-container
 quark.cn#@#.open-share
 quark.cn#@#.share-btns
 quark.cn#@#.share-save
+qudao.com###wechat
 qudong.com##.advert_bottom
 quikr.com,theync.com,all-that-is-interesting.com##.header-banner
 qunar.com##.flight_ad
@@ -40906,6 +40910,7 @@ zzzyk.com###Tinfo
 ||qqyy.com/js/commAdv
 ||qqyy.com/js/public_end_add.js
 ||quangcao-*.epicdn.me^
+||qudao.com/common/minisite.js
 ||query*.petametrics.com^
 ||qunale888.com/files/h5/
 ||qunar.com/js/ga.min.js
@@ -41294,6 +41299,7 @@ zzzyk.com###Tinfo
 ||stats2.*.fdnames.com^
 ||steamchina.com/events/
 ||steelcn.cn/img/bj_*_146_315.jpg
+||stlog*-local.kakao.com^
 ||stockstar.com/*DUILIAN&t=
 ||stockstar.com/api/?id=
 ||stockstar.com/info/1200x90/
@@ -41934,6 +41940,7 @@ zzzyk.com###Tinfo
 ||zongheng.com/upload/hzds/
 ||zongheng.com/upload/recommend/game/
 ||zongheng.com^*/logger.min.js
+||zooj.cn^$third-party
 ||zoossoft.cn^$third-party
 ||zoukankan.com^$csp=script-src 'self' * 'unsafe-eval'
 ||zp365.com/newhousered/hb-index-pop-
