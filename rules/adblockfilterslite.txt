@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250427090057
-! Last modified: 2025/04/27 09:00:57
-! Blocked Filters: 42541
+! Version: 20250427161434
+! Last modified: 2025/04/27 16:14:34
+! Blocked Filters: 42543
 !
 ###AC_ad
 ###AD_160
@@ -21597,6 +21597,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /static/chunks/pages/_app-*.js$replace=/Request\("https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js"/Request\("https:\/\/example\.com"/,domain=investing.com
 /static/common/js/djlib_
 /static/exnb/froloa.js$domain=hd-easyporn.com|hdpornos.net
+/static/idingdian/idd.
 /static/images/ky888.gif
 /static/img/download-top.png|$domain=tpb.one|duckingproxy.eu|hyperproxy.net|pirate.trade|piratebay.red|piratebaymirror.eu|piratebayproxy.tf|piratebays.co|piratebays.co.uk|pirateproxy.tf|proxyproxyproxy.nl|proxyship.click|proxyspotting.in|thepiratebay-proxy.com|thepiratebay.uk.net|tpbmirror.us|tpbunblocked.org|ukpirate.org|ukpirateproxy.xyz|unblockedbay.info|unblocktpb.com|thebay.tv|pirateproxy.wf|pirateproxy.yt|gameofbay.org
 /static/img/download.png|$domain=tpb.one|duckingproxy.eu|hyperproxy.net|pirate.trade|piratebay.red|piratebaymirror.eu|piratebayproxy.tf|piratebays.co|piratebays.co.uk|pirateproxy.tf|proxyproxyproxy.nl|proxyship.click|proxyspotting.in|thepiratebay-proxy.com|thepiratebay.uk.net|tpbmirror.us|tpbunblocked.org|ukpirate.org|ukpirateproxy.xyz|unblockedbay.info|unblocktpb.com|thebay.tv|pirateproxy.wf|pirateproxy.yt|gameofbay.org
@@ -26510,6 +26511,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||redirector.gvt1.com/videoplayback/id/*/source/gfp_video_ads/$media,domain=poki-gdn.com|repuls.io
 @@||regapi.37.com/api/p_register.php?login_account=
 @@||renfei.net^$generichide
+@@||res.aidegelin.cn/dom2/js/app.js$domain=69xx03608.xyz
+@@||res.aidegelin.cn/dom2/js/com.js$domain=69xx03608.xyz
 @@||res.wx.qq.com/mmbizwap/$script
 @@||right.com.cn/forum/*300*250$image
 @@||rm.sina.com.cn/minisite/*/css/art_normal.css$domain=client.sina.cn
@@ -26848,6 +26851,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||teabox.com^$jsinject,elemhide
 @@||teambition.com^$jsinject,elemhide,extension
 @@||tech*.techradar.ink/*/?se=*&listing=$stealth=referrer
+@@||technews.tw/www/delivery/$badfilter
+@@||technews.tw^$generichide,badfilter
 @@||telegram.hr^$content
 @@||teluguone.com^$extension="Disable AMP"
 @@||tenpay.com/v2/res/pub/cps/main/bottom_ad.js
@@ -31637,8 +31642,6 @@ home.firefoxchina.cn##a[track_key="sites_mingzhan"] + a[title="VIP"]
 home.ifeng.com##.fengjc02
 homebook.pl,abczdrowie.pl,autokult.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,jejswiat.pl,kafeteria.pl,komorkomania.pl,luxlux.pl,medycyna24.pl,mixer.pl,money.pl,nocowanie.pl,o2.pl,open.fm,parenting.pl,pinger.pl,pogodnie.pl,pudelek.pl,samosia.pl,wp.pl#$#body { pointer-events: auto !important; }
 homebrewtalk.com,kitchenknifeforums.com,quadraphonicquad.com##.gb-sponsored-wrapper
-homepornking.com##.bbas
-homepornking.com##.bottomlc
 hometheaterforum.com,orbz.io##div[style="width: 300px; height: 600px;"]
 honor.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
 hornetapp.com,hornet.com##.conversation-item--sponsored
@@ -32696,6 +32699,11 @@ jingyan.baidu.com##.right-fixed-related-wrap
 jingyan.baidu.com##.task-panel-entrance
 jingyan.baidu.com##.wgt-cms-banner
 jingyan.baidu.com##.wgt-cms-banner, .right-fixed-related-wrap, #bottom-ads-container
+jinhua.com.cn##.FocusAD
+jinhua.com.cn##.banner1200
+jinhua.com.cn##.banner260
+jinhua.com.cn##.banner465
+jinhua.com.cn##.banner935
 jinse.com##.js-spread__main
 jinti.com###mei
 jinti.com##.fix-kefu
@@ -36508,6 +36516,7 @@ techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.alead
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.rsidebar > div[style^="margin:0 auto"][style*="px auto; text-align:center;"]
 techmize.net,atravan.net#%#//scriptlet('prevent-xhr', 'adsbygoogle')
+technews.tw##.inside_AD
 techposts.org,findaudiobook.com,omgfoss.com###sidebar > #text-2
 techpowerup.com#$?#body style:contains(/background-image: url[\s\S]*?display: block;[\s\S]*?@media[\s\S]*?transform:/) { remove: true; }
 techraptor.net,tftactics.gg###nn_player
@@ -38462,6 +38471,7 @@ zzzyk.com###Tinfo
 ||32xp.com/upimg/
 ||33.pcpop.com
 ||3324.cn^$third-party
+||35336.net/35336.jpg
 ||360.cn/apis/qss/soweb/ad_proxy/internal/
 ||360.cn/festival_zone.html
 ||360.cn/index/showjokes?callback=
@@ -38590,7 +38600,6 @@ zzzyk.com###Tinfo
 ||5dmail.net/image/ORF_1000.gif
 ||5dmail.net/image/ad_
 ||5dmail.net/js/
-||5dscw.com/public/
 ||5etv.com^$third-party
 ||5ilog.com/qq/js/jsgg.js
 ||5imx.com/image/image/
@@ -39745,7 +39754,6 @@ zzzyk.com###Tinfo
 ||dianping.com/wedding/pro/jsonppage
 ||diaoyu123.com/cpro/show.js
 ||dict.youdao.com/vip/privilege/show/V*?bannerType=fanyiTop$domain=fanyi.youdao.com
-||dig.chouti.com/advert
 ||dimtown.com/adimg/
 ||dingdangsheji.com^*/%E5%9B%BE%E6%80%AA%E5%85%BD
 ||dingdangsheji.com^*/%E7%94%BB%E6%9D%BF-
@@ -40531,7 +40539,6 @@ zzzyk.com###Tinfo
 ||izatcloud.net^$third-party
 ||iztwp.com/images/
 ||ja*.gamersky.com^
-||ja2.gamersky.com/
 ||jandan.net/static/sos/recreate-games.gif
 ||jandan.net/static/ss/
 ||jandan.net^*/3kbw2.png
@@ -40579,6 +40586,7 @@ zzzyk.com###Tinfo
 ||jieshengit.com/js/jhhe.
 ||jin10.com/assets/img/sites/index/vip_ad
 ||jin10.com/news_service/static/config/details.config.
+||jinhua.com.cn/ad_pic/
 ||jinti.com^*/aspx/*gg
 ||jinyici.com/qq.js
 ||jishulink.com/images/activity/invite_
@@ -40830,7 +40838,6 @@ zzzyk.com###Tinfo
 ||lvse.com/9
 ||lw54.com/js/
 ||lxapk.com/wp-content/uploads/*.gif
-||ly6080.com.cn/gg/
 ||lyd.com.cn^*950-90.
 ||lysq.com/data/attachment/portal/
 ||lywww.com/data/js.php?id=
@@ -40840,6 +40847,7 @@ zzzyk.com###Tinfo
 ||m.2kxs.org/img/hia1.js
 ||m.bjdcfy.net^*.js
 ||m.hackhome.com/js/m_ga.js
+||m.mianbao99.com/js/detail.js
 ||m.qiushuzw.com/9CB0D8A5/2dfc69b0d8a5.js
 ||m.tiebaimg.com/timg?wapp^*imgtype=0$image
 ||m.ysxs8.com/js/content_db.js
@@ -40939,11 +40947,6 @@ zzzyk.com###Tinfo
 ||mil.news.sina.com.cn/iframe/109/2012/1024/photo.html
 ||mil.news.sina.com.cn/iframe/109/2013/1015/hotpic.html
 ||milffox.com/*/*/*/js/ssu*.js^
-||milimili.tv/js/loadjs/jquery
-||milimili.tv/js/loadjs/jquery10.4.js
-||milimili.tv/js/loadjs/jquery10.7.js
-||milimili.tv/js/loadjs/jquery10.8.js
-||milimili.tv/template/JOELEO/*.js
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
 ||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
@@ -41539,8 +41542,6 @@ zzzyk.com###Tinfo
 ||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
 ||s8.pw^$third-party
 ||safebeta.cn/gg/sefabeta_*js
-||salesmartly.com/client/log/
-||salesmartly.com/client/station/log?
 ||sam*.baby-kingdom.com^
 ||same*.stockstar.com^
 ||saohu*.com/config/json/cctv.json?
@@ -41875,6 +41876,7 @@ zzzyk.com###Tinfo
 ||t.delfi.
 ||tag-based.s3.*.amazonaws.com^
 ||taijuwang.com/template/alifun/js/unFavui.
+||taiwanplus.com/api/video/startVideo
 ||talkfx.*/showTKImg?
 ||talpa-analytics.
 ||tanwanyx.com^$third-party
