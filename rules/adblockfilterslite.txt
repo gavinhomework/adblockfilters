@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250516001553
-! Last modified: 2025/05/16 00:15:53
-! Blocked Filters: 42771
+! Version: 20250516085944
+! Last modified: 2025/05/16 08:59:44
+! Blocked Filters: 42773
 !
 ###AC_ad
 ###AD_160
@@ -20165,6 +20165,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/prebid-ads.js$~third-party,domain=lootlinks.net
 /js/profit.js$~third-party
 /js/ptn/*.js?_=$domain=depositfiles.com|dfiles.eu|dfiles.ru
+/js/pushjs/1.0.0/subscriber.js
 /js/quantcast-
 /js/re-ads-
 /js/script_*.js?$~third-party,domain=video.q34r.org|korall.xyz|porntoday.ws|netuplayer.top|wiztube.xyz|netu.ac|zerknij.cc|speedporn.net|chillicams.net|meucdn.vip|yandexcdn.com|waaw1.tv|waaw.*|czxxx.org|hqq.*|tikzoo.xyz|gledajvideo.top|playerhd.org|ntvid.online|rpdrlatino.live|vertelenovelasonline.com|1069jp.com|diziturk.club|stbnetu.xyz|mundosinistro.com|younetu.org|playvideohd.com|vzlinks.com|javboys.cam|xz6.top|fsohd.pro|playertoast.cloud|pupupul.site|shitcjshit.com|cinecalidad.vip|fansubseries.com.br|vapley.top|player.streaming-integrale.com|rpdrlatino.com|xtapes.to|player.igay69.com|troncha.lol|vpge.link|opuxa.lat|ztnetu.com|filmcdn.top|asdasd1231238das.site|tmdbcdn.lat|stbpnetu.xyz|pokemonlaserielatino.xyz|gayvidsclub.com|zarato.top|videocdnal24.xyz|play.seriesgod.com|pelisfree.site|xstream.top|multiup.us|popkorntajm.com
@@ -23175,6 +23176,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 2smsupernetwork.com,snowbrains.com,theconservativetreehouse.com,times.co.zm,treesofblue.com###text-6
 2smsupernetwork.com,westseattleblog.com###text-3
 2urs.com#%#//scriptlet('abort-on-property-read', 'ads')
+2wheelslife.com,finance240.com##div[data-placement-id="revbid-square"]
+2wheelslife.com,finance240.com#%#//scriptlet('prevent-fetch', 'googleads.g.doubleclick.net')
 2yjw.com,fuliba2021.net,itdog.cn,zhujiceping.com##.orbui
 31mag.nl,doibihar.org,ffworld.xyz,rpclip.com,pastlinkvn.com,cyberstockofficial.in,joyplot.com,javboys.com,asuralightnovel.com,latestjav.com,e-sanatatea.ro,therootdroid.com,jorgemoncada.com,hollywoodsmagazine.com,r3ndy.com,anicosplay.net,ewybory.eu,nanoroms.com,flipreview.com,hiphopa.net,pngtosvg.com,compartilhandobr.com,loksado.com,ecoursefree.com,daemon-hentai.com,yigeplus.xyz,launcherfull.com,cheatbyte.com,techycoder.com,arasindakifark.net,kitguru.net,gsmxt.com,technicalatg.xyz,freetutorialsdownload.online,toolss.net,vipmods.net,adonisfansub.com,udemycoursesfree.me,bitcoinegypt.news,talkjarvis.com,satcesc.com,getfreecourses.net,livenewsof.com,pinayvids.com,hardcoregames.ca,pasend.*,unityassetcollection.com,crypto-fun-faucet.de,fileoops.com,samuraiscan.com,3dmodelshare.org,dailyvideoreports.net,codesnail.com,ma-x.org,sitarchive.com,onlyfanesse.com,codingshiksha.com,graphicux.com,w3layouts.com,musike.net,windowsmatters.com,avoiderrors.com,gatcha.org,4horlover.com,topnewsshow.com,3dzip.org,ovagames.com,lewdsenpai.com#%#//scriptlet("set-constant", "adsbygoogle.length", "undefined")
 324324.cn###gg_468_60
@@ -25013,7 +25016,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||googleads.g.doubleclick.net/pagead/interaction/$domain=quins.us
 @@||googleads.g.doubleclick.net/pagead/interaction/$domain=starkroboticsfrc.com|cryptednews.space|seoliv.com|waezg.xyz|blackwoodacademy.org|lifgam.online|crypto-radio.eu|tiktokcounter.net
 @@||googleads.g.doubleclick.net/pagead/interaction/|$xmlhttprequest,domain=ecosolardigest.com
-@@||googleads.g.doubleclick.net/pagead/interaction/|$xmlhttprequest,domain=finance240.com
+@@||googleads.g.doubleclick.net/pagead/interaction/|$xmlhttprequest,domain=finance240.com|2wheelslife.com
 @@||googleads.g.doubleclick.net/pagead/js/adsbygoogle.js$domain=sportshub.to
 @@||googleads.g.doubleclick.net/pagead/js/adsbygoogle.js$xmlhttprequest,domain=werfgt.fun
 @@||googleads.g.doubleclick.net^$domain=fplstatistics.com
@@ -30248,8 +30251,8 @@ easywayget.com,bazigarkingyoutube.blogspot.com,edukasicampus.net,topliker.net,dr
 easywayget.com,bazigarkingyoutube.blogspot.com,edukasicampus.net,topliker.net,dreamrealitytuition.com,qasimtricks.com,otlinks.xyz,nullphpscript.xyz,gameissue05.blogspot.com,techiesavi.com,teamkong.tk,minecraftalpha.net,ammanpatro.in,freecatv.blogspot.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 ebaumsworld.com,greedyfinance.com##.divider
 ebay.*##.srp-river-answer[class*="CAROUSEL"]:not([class*="NAVIGATION"])
-ebay.*##.x-rx-slot
 ebay.*#$##gh-bulletin-det[style*="height:1px"] { display: block !important; }
+ebay.*#$#.x-rx-slot { position: absolute!important; left: -4000px!important;}
 ebay.*#@#.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 ebay.co.uk,ebay.com,ebay.com.au##.srp-1p__link
 ebay.co.uk,ebay.com,ebay.de#@#.adv
@@ -40819,7 +40822,6 @@ zzzyk.com###Tinfo
 ||js.jialingmm.net/dm/history.js
 ||js.jialingmm.net/dm/tj.js
 ||js.letvcdn.com/js/*/stats/
-||js.passport.qihucdn.com/11.0.1.js
 ||js.static.m1905.cn/pingd.js
 ||js.tlt.cn/js/
 ||js0573.com/images/cus/
