@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260729011952
-! Last modified: 2026/07/29 01:19:52
-! Blocked Filters: 103961
+! Version: 20260729094748
+! Last modified: 2026/07/29 09:47:48
+! Blocked Filters: 103968
 !
 ###AC_ad
 ###AD_160
@@ -28053,8 +28053,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||click.uol.com.br^$domain=uol.com.br
 @@||click.virt.s*.exacttarget.com^|
 @@||clickswin.tvchoicemagazine.co.uk/assets/advertisement/ads-*.js$domain=tvchoicemagazine.co.uk
-@@||client.aps.amazon-adsystem.com/publisher.js$script,domain=thestreet.com
-@@||client.aps.amazon-adsystem.com^$script,domain=newsweek.com
+@@||client.aps.amazon-adsystem.com/publisher.js$script,domain=foxnews.com|newsweek.com|thestreet.com
 @@||client.falixnodes.net^$generichide
 @@||clientlogin.cdn.skype.com^$document
 @@||clients.plex.tv/api/v2/ads/$~third-party
@@ -56940,6 +56939,7 @@ independent.co.uk###main > div[class]:has(> div > div > a[href^="https://tv.appl
 independent.co.uk###taboola-mid-article-thumbnails-ii
 independent.co.uk##.amp-live-list-item[id^="ad-"]
 independent.co.uk##.indy100-trending
+independent.co.uk##.lfyduH
 independent.co.uk##.partner-slots
 independent.co.uk##.section-content .premium-content
 independent.co.uk##.taboola-leaderboard
@@ -63827,10 +63827,10 @@ modosaka.com##.plays_right > center
 modporn.com##a[href^="https://landing.candynetwork.ai/"]
 modporn.com#%#//scriptlet("trusted-replace-node-text", "script", "getEmbed", "/adv_pre_src: \'https:\/\/modporn\.com.*mp4/", "adv_pre_src: '")
 modrinth.com##.GBBNWLJVGRHFLYVGSZKSSKNTHFYXHMBD
-modrinth.com##.max-h-\[250px\]
 modrinth.com##div[type="banner"]
 modrinth.com#?##main > .normal-page__content > .content-wrapper:has(> div[data-ea-publisher])
 modrinth.com#?#.normal-page__content > div[class]:has(> div[class] > div[class] > div[class] > a[rel$="sponsored"])
+modrinth.com,nexusmods.com##.max-h-\[250px\]
 mods.to###detect-block
 mods.to##.main-download-content center:has(> small + div[id^="mods_to_"])
 mods.to#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'pagead2.googlesyndication.com')
@@ -66216,6 +66216,7 @@ nexusmods.com##.border-b:has(> div[data-testid^="ad-container"])
 nexusmods.com##.items-center:has(>div[data-testid^="ad-container-"])
 nexusmods.com##.next-container > div[class^="space-"] > div[data-testid^="ad-container-"]
 nexusmods.com##[data-testid="ad-container-player"]
+nexusmods.com##[data-testid]
 nexusmods.com##[data-testid^="ad-billboard-"]
 nexusmods.com##[data-testid^="ad-leaderboard-"]
 nexusmods.com##[data-testid^="ad-logged-out-leaderboard-"]
@@ -78830,6 +78831,7 @@ thestreet.com##.csw-ae-wide
 thestreet.com##.m-balloon-header
 thestreet.com##.m-detail--feature-spacer
 thestreet.com##.m-video-unit
+thestreet.com##[class^="styles_container"]:has(.OUTBRAIN)
 thestreet.com##div[class^="styles_headerAdSlot__"]
 thestreet.com#%#//scriptlet('remove-attr', 'onload|onerror|data', 'head > script[onerror]')
 thestreet.com#%#//scriptlet('trusted-replace-argument', 'JSON.parse', '0', 'replace:/"AdShield":{"isEnabled":true}/"AdShield":{"isEnabled":false}/', 'AdShield')
@@ -80441,6 +80443,7 @@ tuberel.com##.vda-link
 tuberel.com#?#.tcats div.category-item:has(> a.vda-link)
 tuberel.com#?#.videos div.video-item:has(> a.vda-link)
 tuberel.com,hdzog.com#%#//scriptlet("set-constant", "adver.abEnable", "false")
+tuberipper.click##a[href="/r/dl"]
 tubesex.me###banneradv
 tubesex.me,xxxadd.com##.adban1
 tubesex.me/eureka
@@ -87399,6 +87402,7 @@ zzzyk.com###Tinfo
 ||a.abbyads.com/push.php?spot=$domain=qwiketube.com
 ||a.abbyads.com/slider.php?spot=$domain=qwiketube.com
 ||a.bestcontentitem.top^$third-party
+||a.c-dn.net/b/*/tracking-sdk-javascript.min.js
 ||a.cdn.searchiq.co/app/search/content/presearch/js/presearch.js
 ||a.cnki.net/a/
 ||a.fsdn.com/con/js/sftheme/vendor/bizx-prebid.js$domain=sourceforge.net
@@ -88317,6 +88321,7 @@ zzzyk.com###Tinfo
 ||api.helloextend.com/mintsight
 ||api.hotscope.tv/snaps/top
 ||api.huo360.com/www/back/$image
+||api.ig.com/statistics/
 ||api.invideo.io/v3/send_analytics_event
 ||api.ipgeolocation.io/getip
 ||api.jerkmotion.com/r/
@@ -96546,6 +96551,7 @@ zzzyk.com###Tinfo
 ||mirabelsmarketingmanager.com^$third-party
 ||miraculum.ml/includes/assets/fairuse.js
 ||mirtesen.ru/js/ms.js
+||mis.ig.com/tracking/
 ||miserly-phone.com^$popup
 ||missav*/herebyad
 ||missav.*/pop?url=
@@ -97140,6 +97146,7 @@ zzzyk.com###Tinfo
 ||netzwelt.de/log?
 ||neulion.vo.llnwd.net^*/track.js
 ||neuralstemcell.com.cn/img/js.js
+||neuronal.infunnel.inconcert.cloud/public/tracking/frame.html
 ||new-game-apk.com/wp-content/uploads/*/ads-*.jpg
 ||new.gdtot.*/assets/img/yourlogo.png$popup
 ||newagebd.net/assets/img/ads/
